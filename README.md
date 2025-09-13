@@ -56,12 +56,12 @@ REGEXP_LIKE(column, 'pattern' [, 'match_parameters'])
 
 ## 6. Grouping & Alternation
 
-| Pattern    | Meaning                                 | Example Match                   |                         |                        |
-| ---------- | --------------------------------------- | ------------------------------- | ----------------------- | ---------------------- |
-| `(abc)`    | Capturing group                         | \`(dog                          | cat)\` → "dog" or "cat" |                        |
-| \`         | \`                                      | OR (alternation)                | \`red                   | blue\` → "red", "blue" |
-| `x\|y`     | Match either x or y                     | `foo|bar` → "foo", "bar"       |
-| `\1`, `\2` | Backreference (repeat of earlier group) | `([A-Za-z])\1` → "ee" in "tree" |                         |                        |
+| Pattern       | Meaning                 | Example Match                  |
+|---------------|-------------------------|--------------------------------|
+| ``(abc)``     | Capturing group         | ``(dog\|cat)`` → "dog" or "cat"|
+| ``x\|y``      | Match either x or y     | ``foo\|bar`` → "foo", "bar"    |
+| ``\1``        | Backreference to group  | ``([A-Za-z])\1`` → "ee" in "tree" |
+
 
 ## 7. Match Parameters
 
