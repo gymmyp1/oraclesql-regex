@@ -69,7 +69,7 @@ REGEXP_LIKE(column, 'pattern' [, 'match_parameters'])
 | Pattern | Meaning                | Example Match                   |       |                      |
 | ------- | ---------------------- | ------------------------------- | ----- | -------------------- |
 | `(abc)` | Capturing group        | `(dog\|cat)` → "dog" or "cat"   |       |                      |
-| \`x     | y\`                    | Match either x or y             | \`foo | bar\` → "foo", "bar" |
+| \`x     \| y\`                    | Match either x or y             | \`foo \| bar\` → "foo", "bar" |
 | `\1`    | Backreference to group | `([A-Za-z])\1` → "ee" in "tree" |       |                      |
 
 ---
