@@ -15,7 +15,7 @@ REGEXP_LIKE(column, 'pattern' [, 'match_parameters'])
 ## 2. Anchors
 
 | Pattern | Meaning         | Example Match       |
-| - |  | - |
+| - | - | - |
 | `^`     | Start of string | `^A` → "Alice"      |
 | `$`     | End of string   | `com$` → "test.com" |
 
@@ -38,7 +38,7 @@ REGEXP_LIKE(column, 'pattern' [, 'match_parameters'])
 ## 4. Quantifiers
 
 | Pattern | Meaning         | Example Match                 |
-| - |  | -- |
+| - | - | -- |
 | `*`     | 0 or more       | `a*` → "", "a", "aaa"         |
 | `+`     | 1 or more       | `a+` → "a", "aaa"             |
 | `?`     | 0 or 1          | `colou?r` → "color", "colour" |
@@ -76,7 +76,7 @@ REGEXP_LIKE(column, 'pattern' [, 'match_parameters'])
 ## 7. Match Parameters
 
 | Parameter | Meaning                                         |
-|  | -- |
+| - | -- |
 | `'i'`     | Case-insensitive                                |
 | `'c'`     | Case-sensitive (default)                        |
 | `'n'`     | Allows dot `.` to match newline                 |
